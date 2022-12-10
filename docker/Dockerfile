@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1
 # 작업 폴더 설정
 WORKDIR /home
 # 라이브러리 설치
-COPY docker/requirements.txt /home/requirements.txt
+COPY requirements.txt /home/requirements.txt
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
